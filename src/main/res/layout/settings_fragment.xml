@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fillViewport="false">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="6dp">
+
+        <TextView
+            android:id="@+id/_srv_enable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Pushboard Receiver"
+            android:layout_marginTop="7dip"
+            android:layout_marginBottom="1dp"
+            style="@style/Text"
+            android:paddingLeft="7dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/srv_enable"
+            android:layout_marginTop="7dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="7dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Switch Pushboard service on/off"
+            style="@style/TextSmall"
+            android:paddingLeft="7dp"
+            android:layout_below="@id/_srv_enable"
+            android:layout_marginBottom="7dp"/>
+
+    </RelativeLayout>
+
+    <View style="@style/divider"/>
+
+    <LinearLayout
+        android:id="@+id/broker_url_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="6dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Broker URL or IP"
+        android:layout_marginTop="7dip"
+        android:layout_marginBottom="1dip"
+        style="@style/Text"
+        android:paddingLeft="7dp" />
+
+    <TextView
+        android:id="@+id/broker_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Specify your mqtt broker address here"
+        style="@style/TextSmall"
+        android:paddingLeft="7dp"
+        android:layout_marginBottom="7dp"
+        />
+    </LinearLayout>
+
+    <View style="@style/divider" />
+
+    <LinearLayout
+        android:id="@+id/broker_port_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="6dp">
+
+    <TextView
+        android:id="@+id/_broker_port"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Broker Port"
+        android:layout_marginTop="7dip"
+        android:layout_marginBottom="1dip"
+        style="@style/Text"
+        android:paddingLeft="7dp" />
+
+    <TextView
+        android:id="@+id/broker_port"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Specify your mqtt broker port"
+        style="@style/TextSmall"
+        android:paddingLeft="7dp"
+        android:layout_marginBottom="7dp"
+        />
+        </LinearLayout>
+
+    <View style="@style/divider" />
+
+    <LinearLayout
+        android:id="@+id/broadcast_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="6dp">
+
+        <TextView
+            android:id="@+id/_broadcast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Broadcast group"
+            android:layout_marginTop="7dip"
+            android:layout_marginBottom="1dp"
+            style="@style/Text"
+            android:paddingLeft="7dp" />
+
+        <TextView
+            android:id="@+id/broadcast_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All devices subscribed to this group \nwill receive messsages"
+            style="@style/TextSmall"
+            android:paddingLeft="7dp"
+            android:layout_below="@id/_broadcast"
+            android:layout_marginBottom="7dp"/>
+
+    </LinearLayout>
+
+    <View style="@style/divider"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="6dp">
+
+        <TextView
+            android:id="@+id/_logging"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Logging"
+            android:layout_marginTop="7dip"
+            android:layout_marginBottom="1dp"
+            style="@style/Text"
+            android:paddingLeft="7dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/enable_logging"
+            android:layout_marginTop="7dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="7dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable some debug logging"
+            style="@style/TextSmall"
+            android:paddingLeft="7dp"
+            android:layout_below="@id/_logging"
+            android:layout_marginBottom="7dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notifications Mirroring"
+        style="@style/Title"
+        android:layout_marginTop="7dp"
+        android:paddingLeft="7dp" />
+
+    <View style="@style/divider"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="6dp">
+
+        <TextView
+            android:id="@+id/_mirroring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enable Mirroring"
+            android:layout_marginTop="7dip"
+            android:layout_marginBottom="1dp"
+            style="@style/Text"
+            android:paddingLeft="7dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/enable_mirroring"
+            android:layout_marginTop="7dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="7dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Relay local notifications to remote device"
+            style="@style/TextSmall"
+            android:paddingLeft="7dp"
+            android:layout_below="@id/_mirroring"
+            android:layout_marginBottom="7dp"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/_mirror_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="6dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remote device ID"
+            android:layout_marginTop="7dip"
+            android:layout_marginBottom="1dip"
+            style="@style/Text"
+            android:paddingLeft="7dp" />
+
+        <TextView
+            android:id="@+id/mirror_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Specify remote devices ID separated by comma"
+            style="@style/TextSmall"
+            android:paddingLeft="7dp"
+            android:layout_marginBottom="7dp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This device ID:"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="12345"
+        android:id="@+id/dev_id"
+        android:background="@drawable/rectanglebg"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="5dp"
+        android:padding="5dp" />
+
+</LinearLayout>
+</ScrollView>

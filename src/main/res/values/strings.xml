@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PushBoard</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="broker_url">Specify broker URL</string>
+    <string name="broker_url_too_short">Specified URL too short!</string>
+    <string name="broker_port">Specify broker port</string>
+    <string name="broker_port_too_short">Broker port value is too short!</string>
+    <string name="broadcast_group">Specify broadcast group</string>
+    <string name="broadcast_too_short">Broadcast group too short!</string>
+    <string name="mirror_dev_id">Specify remote device ID</string>
+    <string name="mirror_dev_id_short">Specified wrong id!</string>
+
+</resources>
